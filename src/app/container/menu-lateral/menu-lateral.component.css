@@ -1,0 +1,13 @@
+.mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.menu-lateral-active {
+    background-color: #f0f0f0;
+    color: #3f51b5;
+}
+
+.menu-lateral-active .mat-list-icon {    
+    color: #3f51b5;
+}
+ 

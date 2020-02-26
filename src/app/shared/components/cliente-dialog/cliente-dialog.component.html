@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>{{tituloDialog}}</h1>
+<div mat-dialog-content>
+
+    <form [formGroup]="clienteGroup">
+        <mat-form-field>
+            <input #nomeRef matInput formControlName="nome" maxlength="25" placeholder="Nome">
+            <mat-hint align="end">{{nomeRef.value.length}} / 25</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input #idadeRef matInput formControlName="idade" maxlength="3" placeholder="idade">
+            <mat-hint align="end">{{idadeRef.value.length}} / 3</mat-hint>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button [disabled]="!clienteGroup.valid" (click)="onFinish()">Confirmar</button>
+</div>
