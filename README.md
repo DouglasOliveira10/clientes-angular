@@ -1,27 +1,22 @@
-# ClientesApiAngular
+# Clientes Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+| Data | Autor | Comentários | Versão |
+| --- | --- | --- | --- |
+| 27/02/2020 | Douglas Oliveira  | Versão de lançamento | 1.0.0-RELESE |
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Objetivo
 
-## Code scaffolding
+O objetivo do sistema é ser um exemplo de front-end consumindo api [clientes-api-spring-boot](https://github.com/DouglasOliveira10/clientes-api-spring-boot) , o projeto foi desenvolvido em angular 9. Sugestões são bem vindas!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Inicializando o Sistema
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Execute `ng serve` e no navegador abra o endereço `http://localhost:4200/`. 
 
-## Running unit tests
+### Tecnologias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Angular 9
+* TypeSctript
