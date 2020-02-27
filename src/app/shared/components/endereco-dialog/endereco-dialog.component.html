@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>{{tituloDialog}}</h1>
+<div mat-dialog-content>
+
+    <form [formGroup]="enderecoGroup">
+        <mat-form-field>
+            <input #cepRef matInput formControlName="cep" (blur)="buscarEndereco($event)" maxlength="9" minlength="9" placeholder="cep">
+            <mat-hint align="end">{{cepRef.value.length}} / 9</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="logradouro" placeholder="logradouro">            
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="numero" placeholder="numero">            
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="complemento" placeholder="complemento">            
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="bairro" placeholder="bairro">            
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="localidade" placeholder="localidade">            
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="uf" placeholder="uf">            
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button [disabled]="!enderecoGroup.valid" (click)="onFinish()">Confirmar</button>
+</div>

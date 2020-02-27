@@ -32,6 +32,6 @@ export class ClientesService {
   }
 
   removerCliente(cliente: Cliente): Observable<ResponseBase<Cliente>> {
-  return this.httpClient.delete<ResponseBase<Cliente>>(`${environment.baseUrl}/clientes/${cliente.id}`);
+    return this.httpClient.delete<ResponseBase<Cliente>>(`${environment.baseUrl}/clientes/${cliente.id}`);
   }
 }

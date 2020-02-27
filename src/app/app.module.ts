@@ -10,6 +10,7 @@ import { MenuLateralComponent } from './container/menu-lateral/menu-lateral.comp
 import { ClienteComponent } from './modules/cliente/cliente.component';
 import { EnderecoComponent } from './modules/endereco/endereco.component';
 import { ClienteDialogComponent } from './shared/components/cliente-dialog/cliente-dialog.component';
+import { EnderecoDialogComponent } from './shared/components/endereco-dialog/endereco-dialog.component';
 import { ConfirmDialogComponent } from './shared/components/confirm-dialog/confirm-dialog.component';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -34,6 +35,7 @@ import {MatListModule} from '@angular/material/list';
     ClienteComponent,
     EnderecoComponent,
     ClienteDialogComponent,
+    EnderecoDialogComponent,
     ConfirmDialogComponent
   ],
   imports: [
